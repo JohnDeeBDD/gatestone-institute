@@ -7,3 +7,17 @@
  * Theme URI:      https://parler.com
  * Author URI:     https://generalchicken.net
  */
+
+#site-logo img
+{
+	 width: 300px !important;
+	 height:auto;
+	 margin-left:20px;
+	 
+}
+
+.site-header
+{
+	background-color:#fff !important;
+}
+

@@ -20,7 +20,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
-<img src = "http://yeezyideationcenter.com/wp-content/themes/gatestone2017/gatestone-logo-1000.gif" />
 </head>
 
 <body <?php body_class(); ?>>
@@ -30,18 +29,23 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
-		<?php if ( has_nav_menu( 'top' ) ) : ?>
+			<div class="site-header-main">
+				<div class="site-branding">
+				<div id="site-logo">
+				<img src = "http://yeezyideationcenter.com/wp-content/themes/gatestone2017/gatestone-logo-1000.gif" />
+				</div>
+			<?php if ( has_nav_menu( 'top' ) ) : ?>
 			<div class="navigation-top">
 				<div class="wrap">
 					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
-
-	</header><!-- #masthead -->
-
+					
+			</div><!-- .site-branding -->
+					
+			</div><!-- .site-header-main -->
+</header><!-- .site-header -->
 	<?php
 
 	/*
@@ -57,4 +61,3 @@
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
-header.php
