@@ -1,0 +1,193 @@
+/* colors 
+Magenta: #DB0026;
+Dark Grey: #353535;
+*/
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/Myriad Pro Regular.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+}
+
+.header {
+	z-index: 11;
+}
+
+.site {
+
+}
+
+.sidebar {
+	float: left;
+	width: 350px;
+	height: 600px;
+	padding: 20px;
+	margin-top: 30px;
+	border-left: 1px solid #d5d5d5;
+}
+
+.main {
+	float: left;
+	width: calc(100% - 350px);
+	height: 600px;
+	padding: 20px;
+	margin-top: 30px;
+	/*border: 1px dotted #353535;*/
+}
+
+.title {
+	color: #DB0026;
+}
+
+.top {
+	padding: 10px 20px;
+	display:flex;
+}
+
+.logo, .logo>img {
+	float: left;
+	width: 280px;
+	height: 125.7px;
+	margin-right: 10px;
+}
+
+.banner {
+	float: right;
+	width: calc(100% - 280px - 10px);
+	height: 125px;
+	padding: 15px;
+	border: 1px solid #d5d5d5;
+	border-radius: 5px;
+}
+
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.start-button {
+	display: none;
+	visibility: hidden;
+	padding: 10px;
+	margin: 10px;
+	background-color: #FFF;
+	color: #DB0026;
+	border: 1px solid #DB0026;
+	font-size: 1.2em;
+	outline: none;
+}
+
+.start-button:hover {
+	background-color: #DB0026;
+	color: #FFF;
+}
+
+.hide-nav {
+	display: block;
+	visibility: visible;
+	
+}
+
+.nav {
+	display: block;
+	margin: 0;
+	font-family: "Myriad Pro";
+	border-bottom: 4px solid #DB0026;
+}
+
+.nav > ul {
+	display: block;
+	padding: 0 20px;
+	list-style: none;
+}
+
+.nav > ul > li {
+	float: left;
+	display: block;
+	margin-right: 3px;
+}
+
+.nav > ul > li > a {
+	clear: both;
+	display: block;
+	padding:  8px 15px 6px 15px;
+	margin-bottom: -23px;
+	background-color:  #353535;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.nav > ul > li > a:hover {
+	background-color: #FFFFFF;
+	color:  #DB0026;
+	border: 1px solid #DB0026;
+	padding:  7px 14px 5px 14px;
+}
+
+.nav > ul > li.current-menu-item > a {
+	background-color:  #DB0026;
+	color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+	.start-button {
+		display: block;
+		visibility: visible;
+	}
+
+	.hide-nav {
+		display: none;
+		visibility: hidden;
+	}
+
+	.nav {
+		margin: 0 0 0 10px;
+		font-family: "Myriad Pro";
+		border-left: 4px solid #DB0026;
+		border-bottom: none;
+	}
+
+	.nav > ul {
+		display: block;
+		padding: 0 5px;
+		list-style: none;
+	}
+
+	.nav > ul > li {
+		float: none;
+		display: block;
+		margin-bottom: 3px;
+	}
+
+	.nav > ul > li > a {
+		display: block;
+		padding:  8px 15px 6px 15px;
+		margin-bottom: 2px;
+		background-color:  #353535;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.nav > ul > li > a:hover {
+		background-color: #FFFFFF;
+		color:  #DB0026;
+		border: 1px solid #DB0026;
+		padding:  7px 14px 5px 14px;
+	}
+
+	.nav > ul > li.current-menu-item > a {
+		background-color:  #DB0026;
+		color: #FFFFFF;
+	}
+}
