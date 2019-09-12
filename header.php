@@ -32,26 +32,25 @@
 
 <body <?php body_class();?>>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'twentyseventeen');?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'twentyseventeen');?></a>
 
-    <header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 
-        <div class="top clearfix">
+		<div class="top clearfix">
             <a class="logo" href="https://www.gatestoneinstitute.org"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.gif" alt=
             "Gatestone Institute" title="Gatestone Institute"></a>
-            <div class="banner">
+            <!-- <div class="banner">
                 <h1 style="color: #CCC;">Some content goes here.</h1>
-            </div>
+            </div> -->
         </div>
 
-        <?php if (has_nav_menu('top')): ?>
-            <button class="start-button">Start Here</button>
-            <?php wp_nav_menu(['container_class' => 'nav clearfix'])?>
-        <?php endif;?>
+		<?php if (has_nav_menu('top')): ?>
+            <?php get_template_part('template-parts/navigation/navigation', 'top');?>
+		<?php endif;?>
 
-    </header><!-- #masthead -->
+	</header><!-- #masthead -->
 
-    <?php
+	<?php
 
 /*
  * If a regular post or page, and not the front page, show the featured image.
@@ -64,5 +63,5 @@ if ((is_single() || (is_page() && !twentyseventeen_is_frontpage())) && has_post_
 endif;
 ?>
 
-    <div class="site-content-contain">
-        <div id="content" class="site-content">
+	<div class="site-content-contain">
+		<div id="content" class="site-content">
