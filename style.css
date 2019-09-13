@@ -1,0 +1,63 @@
+/**
+ * Theme Name:     Gatestone Institue
+ * Author:         James Karlinski
+ * Template:       twentyseventeen
+ * Text Domain:	   gatestone
+ * Description:    A child of 2017 made by Parler
+ * Theme URI:      https://parler.com
+ * Author URI:     https://generalchicken.net
+ */
+
+
+ /* blog page css for blog roll */
+ .blog .post{
+     box-shadow : 2px 4px 8px 0px rgba(92, 92, 92, 0.308);
+     padding :20px;
+     margin-bottom:30px;
+ }
+
+ .blog .post p{
+    margin-bottom : 5px;
+ }
+ .blog .post h2{
+     margin-bottom:0.2em;
+ }
+
+ .blog .more-link{
+     color: #DA5764;
+ }
+
+
+ /* making the content area bigger of blog page  */
+ @media screen and (min-width: 48em){
+    .blog.has-sidebar:not(.error404) #primary {
+        width: 69% !important;
+    }
+ }
+
+ /* making the sidebar are thinner p blog page */
+ @media screen and (min-width: 48em){
+    .blog.has-sidebar #secondary {
+        width: 25% !important;
+    }
+ }
+
+ /* making the wrap bigger  of blog page*/
+ @media screen and (min-width: 48em){
+    .blog .wrap {
+        max-width: 1140px;
+    }
+}
+
+ /* setting the padding below article */
+
+ @media screen and (min-width: 48em){
+    .blog .site-main > article, .archive .site-main > article, .search .site-main > article {
+        padding-bottom: 20px;
+    }
+ }
+
+ /* Blog page css end  */
+
+
+
