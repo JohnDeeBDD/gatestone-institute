@@ -17,3 +17,6 @@ add_action( 'wp_enqueue_scripts', 'gatestone2017_style' );
  * Your code goes below.
  */
 
+function gatestone_authors(){
+	echo 'authors';
+}add_shortcode('gatestone', 'gatestone_authors');
